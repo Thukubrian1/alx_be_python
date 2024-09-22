@@ -1,7 +1,13 @@
+<<<<<<< HEAD
 input("What is the weather like today? (sunny/rainy/cold) ")
 
 weather = "sunny" or "rainy" or "cold"
 
+=======
+input( "What's the weather like today ? (sunny /rainy /cold ) ")
+weather = "sunny" or "rainy" or "cold"
+
+>>>>>>> ad5c38cff872cf414ebf86ea46f7dbc5f1e85534
 if weather == "sunny":
     print("Wear a t-shirt and sunglasses.")
 
