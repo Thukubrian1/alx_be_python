@@ -1,4 +1,4 @@
-Task = input("Input your task: ")
+Task = input("Enter your task: ")
 
 Priority = input("Priority (high/medium/low): ")
 
