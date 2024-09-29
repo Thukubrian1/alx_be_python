@@ -10,7 +10,10 @@ def perform_operation(num1, num2, operation):
         return num1 * num2
     
     elif operation == "divide":
-        return num1 / num2
+        if num2 == 0:
+            print("Can't divide by 0")
+        else:
+            return num1 / num2
     
     else:
         print("Invalid Input")
