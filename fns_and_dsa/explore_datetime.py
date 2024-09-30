@@ -15,6 +15,7 @@ calculate_future_date = int(input("Enter the  number of days to add to the curre
 
 future_date = datetime.now() + timedelta(days=calculate_future_date)
 
-calculate_future_date = future_date,strftime("%Y-%m-%d")
+calculate_future_date = future_date.strftime("%Y-%m-%d")
 
 print(f"Future date: {future_date}")
+
