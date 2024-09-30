@@ -22,6 +22,6 @@ elif conversion == "F":
         print(convert_to_celsius())
 
 else:
-        print("Invalid input")
+        print("Invalid temperature. Please enter a numeric value.")
 
 
