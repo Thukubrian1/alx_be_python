@@ -4,10 +4,16 @@ class Book:
         self.author = author
         self._is_checked_out = is_checked_out
 
+    def check_out(self):
+        self._is_checked_out -= Book
+    
+    def return_book(self):
+        self.return_book -= Book
+
 class Library(Book):
     def __init__(self):
         self._book = Book
-        
+
     def __init__(self , title, author, is_checked_out , book):
         super().__init__(title, author, is_checked_out)
         self._book = book
