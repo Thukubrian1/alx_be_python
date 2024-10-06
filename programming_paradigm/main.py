@@ -39,7 +39,7 @@ def main():
     denominator = sys.argv[2]
 
     result = safe_divide(numerator, denominator)
-    print(result )
+    print(f"The result of {numerator} / {denominator} is {result:.1f}" )
 
 if __name__ == "__main__":
     main()
