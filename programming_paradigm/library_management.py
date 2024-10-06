@@ -5,10 +5,12 @@ class Book:
         self._is_checked_out = is_checked_out
 
 class Library(Book):
-    def __init__(self , title, author, is_checked_out , book):
+    def __init__(self , title, author, is_checked_out):
         super().__init__(title, author, is_checked_out)
-        self._book = book
 
+    def __init__(self,book):
+        self._book = book
+        
     def add_book(self,book):
         self.add_book += book
         print(f"You have added {self.title} by {self.author}")
