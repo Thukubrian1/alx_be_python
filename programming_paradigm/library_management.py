@@ -5,7 +5,11 @@ class Book:
         self._is_checked_out = is_checked_out
 
     def check_out(self):
-        self._is_checked_out -= Book
+        if self._book == self.check_out:
+            return True
+
+        else:
+            return False
     
     def return_book(self):
         self.return_book -= Book
