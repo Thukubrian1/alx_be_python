@@ -16,22 +16,22 @@ class Book:
 
 class Library(Book):
     def __init__(self):
-        self._book = Book
+        self._book =[]
 
     def __init__(self , title, author, is_checked_out , book):
         super().__init__(title, author, is_checked_out)
         self._book = book
         
-    def add_book(self,book):
-        self.add_book += book
+    def add_book(self):
+        self._book.append(self._book)
         print(f"You have added {self.title} by {self.author}")
 
-    def checkout_book(self,book):
-        self.checkout_book -= book
+    def checkout_book(self):
+        self.checkout_book.remove(self._book)
         return f"Available books after checking out '1984'\n {self.title}"
 
-    def return_book(self,book):
-        self.return_book += book
+    def return_book(self):
+        self.return_book.append(self._book)
         return f"Available books after returing '1984':\n {self.title}\n {self.author}"
 
     def list_available_books(self):
