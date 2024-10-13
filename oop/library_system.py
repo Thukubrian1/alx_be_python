@@ -35,5 +35,4 @@ class Library(Book):
         
         else:
             for book in self.books:
-                    def __str__(self):
-                        return f"{self.title} by {self.author}"
+                print(book.__str__())
